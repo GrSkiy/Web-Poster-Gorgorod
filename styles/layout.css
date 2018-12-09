@@ -1,0 +1,98 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'HeliosC';
+  color: white;
+}
+img {
+    width: 100%;
+  }
+
+.background {
+  position: relative;
+  width: 100%;
+  z-index: 0
+}
+
+.first_layer {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.second_layer {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.third_layer {
+  position: absolute;
+  top: 4727px;
+  z-index: 3;
+}
+
+.fourth_layer {
+  position: absolute;
+  top: 650px;
+  z-index: 4;
+}
+
+.white_logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 4;
+  height: 161px;
+  width: 121.23px;
+}
+
+.red_logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 4;
+  height: 161px;
+  width: 121.23px;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+}
+.content h1 {
+  font-size: 50px;
+  line-height: 120%;
+  position: relative;
+  left: 795px;
+  top: 1863px;
+  width: 582px;
+  height: 186px;
+}
+
+.content p {
+  position: relative;
+  line-height: 120%;
+  top: 2225px;
+  left: 63px;
+  font-size: 50px;
+  width: 1215px;
+  height: 738px
+}
+.content h2:first-of-type {
+  position: relative;
+  top: 2700px;
+  left: 63px;
+  font-size: 120px;
+  width: 660px;
+  height: 250px;
+}
+.content h2:last-of-type {
+  position: relative;
+  top: 4650px;
+  left: 192px;
+  font-size: 120px;
+  width: 1185px;
+  height: 250px;
+}

@@ -1,0 +1,11 @@
+@font-face
+{
+  font-family: 'HeliosC';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/HeliosC-Bold.eot');
+  src: url('../fonts/HeliosC-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HeliosC-Bold.woff') format('woff'),
+  url('../fonts/HeliosC-Bold.ttf') format('truetype');
+}
