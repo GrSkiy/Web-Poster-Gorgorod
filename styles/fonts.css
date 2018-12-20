@@ -1,11 +1,44 @@
 @font-face
 {
-  font-family: 'HeliosC';
+  font-family: 'HeliosCompressedC';
   font-weight: normal;
   font-style: normal;
 
-  src: url('../fonts/HeliosC-Bold.eot');
-  src: url('../fonts/HeliosC-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/HeliosC-Bold.woff') format('woff'),
-  url('../fonts/HeliosC-Bold.ttf') format('truetype');
+  src: url('../fonts/HeliosCompressedC.eot');
+  src: url('../fonts/HeliosCompressedC.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HeliosCompressedC.woff') format('woff'),
+  url('../fontsHeliosCompressedC.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HeliosCondBlackC';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/HeliosCondBlackC.eot');
+  src: url('../fonts/HeliosCondBlackC.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HeliosCondBlackC.woff') format('woff'),
+  url('../fonts/HeliosCondBlackC.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HeliosCondC-Bold';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/HeliosCondC-Bold.eot');
+  src: url('../fonts/HeliosCondC-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HeliosCondC-Bold.woff') format('woff'),
+  url('../fonts/HeliosCondC-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HeliosCondLightC';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/HeliosCondLightC.eot');
+  src: url('../fonts/HeliosCondLightC.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HeliosCondLightC.woff') format('woff'),
+  url('../fonts/HeliosCondLightC.ttf') format('truetype');
 }
