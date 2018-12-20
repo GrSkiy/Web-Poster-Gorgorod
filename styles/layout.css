@@ -1,12 +1,13 @@
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   box-sizing: border-box;
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-header {
+.first_header {
 
   padding-top: 50px;
   padding-left: 50px;
@@ -18,12 +19,12 @@ header {
   height: 367px;
 }
 
-header img {
+.first_header img {
   width: 102px;
   height: 137px;
 }
 
-header span {
+.first_header span {
   min-width: 100px;
   max-width: 781px;
   height: 148px;
@@ -42,7 +43,7 @@ header span {
   width: 26px;
 }
 
-header ul {
+.first_header ul {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -54,6 +55,10 @@ header ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.second_header {
+  display: none;
 }
 
 .background1 {
@@ -69,13 +74,21 @@ a {
   display: none;
 }
 
+.background4 {
+  display: none;
+}
+
+.background5 {
+  display: none;
+}
+
 .about {
   margin-top: -5px;
   margin-bottom: -1px;
   padding-left:50px;
   padding-right: 50px;
   width: 100%;
-  height: 2102px;
+  height: 2050px;
   background: linear-gradient(180deg, #921921 0%, #C6202C 61.6%);
 }
 
@@ -109,7 +122,7 @@ a {
   width: 1106px;
 }
 
-.stracture_space-between {
+.structure_space-between2 {
   display: flex;
   justify-content: space-between;
   padding-top: 393px;
@@ -160,7 +173,7 @@ a {
 }
 
 .how_content div p {
-  margin-top: 59px;
+  margin-top: 20 px;
   font-family: "HeliosCondLightC";
   font-size: 48px;
 }
@@ -174,7 +187,7 @@ a {
 .vacancy_heading {
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 250px;
+  padding-top: 200px;
   color: #C6202C;
   font-family: "HeliosCondBlackC";
   display: flex;
@@ -196,7 +209,7 @@ a {
   padding-left: 50px;
   padding-right: 50px;
   display: grid;
-  grid: repeat(2, minmax(895px, 1335px)) / repeat(2, minmax(600px, 2000px));
+  grid: 1335px 1100px / repeat(2, minmax(600px, 2000px));
   grid-gap: 50px;
 }
 
@@ -241,7 +254,7 @@ a {
 .vacancy_offers div p {
   font-size: 48px;
   font-family: "HeliosCondLightC";
-  padding-top: 56px;
+  padding-top: 20px;
 }
 
 .vacancy_offers div span {
@@ -278,8 +291,8 @@ a {
 @media (max-width: 1350px) {
   .vacancy_offers {
     display: grid;
-    grid-template-columns: minmax(600px, 2000px);
-    grid-template-rows: 1350px 1260px 1060px 1100px;
+    grid-template-columns: minmax(0px, 2000px);
+    grid-template-rows: 1350px 1270px 1000px 1100px;
     grid-gap: 0;
   }
 
@@ -287,7 +300,7 @@ a {
     padding-top: 0;
   }
   .button {
-    font-size: 40px;
+    font-size: 45px;
     padding-bottom: 80px;
   }
 
@@ -354,12 +367,17 @@ a {
     grid: repeat(3, minmax(150px, 500px)) / repeat(2, minmax(300px, 1000px));
     grid-gap: 50px;
   }
+
+  .vacancy_heading {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 1064px) {
   .about {
     height: 1200px;
   }
+
   .about h3{
     font-size: 60px;
   }
@@ -378,6 +396,10 @@ a {
     padding-top: 10px;
   }
 
+  .about_content2 p:first-of-type {
+    padding-top: 10px;
+  }
+
   .about_content2 {
     width: 700px;
   }
@@ -392,8 +414,9 @@ a {
   .how_heading h3 {
     font-size: 70px;
   }
-  .stracture_space-between {
+  .structure_space-between2 {
     padding-top: 225px;
+    margin: 0 auto;
   }
 }
 
@@ -401,7 +424,7 @@ a {
   .about {
     height: 1150px;
   }
-  .stracture_space-between {
+  .structure_space-between2 {
     padding-top: 200px;
   }
   .background2 {
@@ -412,24 +435,44 @@ a {
     display: block;
     width: 100%;
   }
+
+  .how_heading {
+    padding-top: 120px;
+  }
   .how_heading h3{
     font-size: 60px;
   }
   .how_content {
-    display: grid;
-    grid: 320px 360px 320px 320px 370px 320px / repeat(1, minmax(300px, 1000px));
+    padding-top: 120px;
+    grid: 320px 360px 320px 320px 370px 320px / repeat(1, minmax(0, 1000px));
     grid-gap: 0;
   }
 
   .vacancy_heading {
-    padding-top: 180px;
+    padding-top: 70px;
   }
   .vacancy_heading h3 {
     font-size: 80px;
   }
+
+  .button {
+    font-size: 30px;
+    padding-bottom: 60px;
+  }
+
+  .button a {
+    width: 624px;
+    height: 63px;
+  }
 }
 
-@media  (max-width: 830px){
+@media (max-width: 867px) {
+  .vacancy_offers {
+    grid-template-rows: 1450px 1270px 1020px 1000px;
+  }
+}
+
+@media  (max-width: 830px) {
   .background_how {
     display: none;
   }
@@ -447,10 +490,515 @@ a {
   }
 
   .vacancy_heading {
-    padding-top: 150px;
+    padding-top: 60px;
   }
 
   .vacancy_heading h3 {
     font-size: 70px;
+  }
+}
+
+@media (max-width: 800px)  {
+  .first_header {
+    display: none;
+  }
+
+  .second_header {
+    display: block;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #C6212C;
+    height: 429px;
+  }
+
+  .structure_help2 img {
+    width: 102px;
+    height: 137px;
+  }
+
+  .second_header span {
+    min-width: 100px;
+    max-width: 781px;
+    height: 148px;
+    font-size: 40px;
+    font-family: "HeliosCondC-Bold";
+    line-height: 90%;
+    margin-top: 18px;
+  }
+
+  .structure_help2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .second_header ul {
+    width: 508px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 30px;
+    font-family: "HeliosCompressedC";
+  }
+
+  .about, .how_heading, .how_content, .how_heading, .vacancy_heading, .vacancy_offers {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .about {
+    height: 950px;
+  }
+
+  .structure_space-between2 {
+    padding-top: 150px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about_content1 {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 120px;
+  }
+
+  .about h3 {
+    font-size: 50px;
+  }
+
+  .about p {
+    font-size: 25px;
+  }
+
+  .about_content1 p:first-of-type {
+    padding-top: 7px;
+  }
+
+  .about_content2 p:first-of-type {
+    padding-top: 7px;
+  }
+
+  .how_heading h3 {
+    font-size: 45px;
+  }
+
+  .button {
+    font-size: 25px;
+    padding-bottom: 60px;
+  }
+
+  .button a {
+    width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .structure_help2 {
+    flex-direction: column-reverse;
+  }
+
+  .structure_help2 ul {
+    width: 100%;
+    font-size: 40px;
+    height: 54px;
+  }
+
+  .how_heading {
+    padding-top: 100px;
+  }
+
+  .how_heading h2 {
+    font-size: 135px;
+  }
+
+  .how_content {
+    padding-top: 135px;
+  }
+}
+
+@media (max-width: 676px) {
+  .how_content {
+    grid-template-rows: 320px 420px 320px 320px 370px 320px;
+  }
+
+  .vacancy_heading h3 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 672px) {
+  .vacancy_offers {
+    grid-template-rows: 1460px 1270px 1070px 1150px;
+  }
+}
+
+@media (max-width: 668px) {
+  .how_content {
+      grid-template-rows: 320px 420px 320px 320px 420px 320px;
+  }
+}
+
+@media (max-width: 663px) {
+  .how_content {
+      grid-template-rows: 320px 420px 400px 320px 420px 320px;
+  }
+}
+
+@media (max-width: 638px) {
+  .how_content {
+    grid-template-rows: 320px 420px 450px 390px 420px 320px;
+  }
+
+@media (max-width: 627px) {
+  .vacancy_offers {
+    grid-template-rows: 1500px 1270px 1070px 1150px;
+  }
+}
+
+@media (max-width: 627px) {
+  .second_header {
+    height: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+  .second_header span{
+    font-size: 50px;
+  }
+
+  .structure_help2 {
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+  }
+
+  .structure_help2 ul {
+    font-size: 30px;
+  }
+
+  .structure_help2 img {
+    width: 347px;
+    height: 466px;
+  }
+
+  .background3 {
+    display: none;
+  }
+
+  .background4 {
+    display: block;
+    width: 100%
+  }
+  .how_heading h2 {
+    font-size: 110px;
+  }
+  .how_heading h3 {
+    font-size: 34px;
+  }
+
+  .how_content {
+    padding-top: 100px;
+  }
+
+  .vacancy_heading {
+    padding-top: 30px;
+  }
+}
+@media  (max-width: 600px) {
+  .how_content {
+    grid-template-rows: 320px 420px 450px 390px 420px 320px;
+  }
+
+  .vacancy_offers {
+    grid-template-rows: 1140px 990px 800px 900px;
+  }
+
+  .offer1 img {
+    width: 400px;
+    height: 575px;
+  }
+
+  .offer2 img {
+    width: 400px;
+    height: 572px;
+  }
+
+  .offer3 img {
+    width: 400px;
+    height: 354px;
+  }
+
+  .offer4 img {
+    width: 400px;
+    height: 374px;
+  }
+
+  .vacancy_offers div h4 {
+    font-size: 50px;
+  }
+
+  .vacancy_offers div p {
+    font-size: 40px;
+  }
+
+  .vacancy_offers div span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 571px) {
+  .about {
+    height: 1150px;
+  }
+
+  .how_content {
+    grid-template-rows: 280px 370px 360px 330px 370px 260px;
+  }
+
+  .how_content div h4 {
+    font-size: 50px;
+  }
+
+  .how_content div p {
+    font-size: 45px;
+  }
+
+  .how_content div span {
+    font-size: 45px;
+  }
+
+  .vacancy_heading h4 {
+    font-size: 30px;
+  }
+
+  .vacancy_offers {
+    grid-template-rows: 1140px 990px 850px 840px;;
+  }
+
+  .button {
+    font-size: 23px;
+    padding-bottom: 40px;
+  }
+
+  .button a {
+    width: 456px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 549px) {
+  .vacancy_heading h3 {
+    font-size: 50px;
+  }
+}
+
+@media  (max-width: 536px) {
+  .vacancy_offers {
+    grid-template-rows: 1200px 990px 900px 840px;
+  }
+}
+
+@media (max-width: 500px) {
+  .structure_help2 ul{
+    font-size: 25px;
+  }
+
+  .how_heading h1 {
+    font-size: 168px;
+  }
+
+  .how_heading h2 {
+    font-size: 69px
+  }
+
+  .how_heading h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .how_content {
+    grid-template-rows: 212px 276px 250px 250px 286px 246px;
+  }
+
+  .how_content div h4 {
+    font-size: 40px;
+  }
+
+  .how_content div p {
+    font-size: 35px;
+  }
+
+  .how_content div span {
+    font-size: 35px;
+  }
+
+  .vacancy_heading h2 {
+    font-size: 168px;
+  }
+
+  .vacancy_heading h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .vacancy_offers {
+    grid-template-rows: 964px 827px 697px 760px;
+  }
+
+  .offer1 img {
+    width: 324px;
+    height: 465px;
+  }
+
+  .offer2 img {
+    width: 324px;
+    height: 462px;
+  }
+
+  .offer3 img {
+    width: 324px;
+    height: 290px;
+  }
+
+  .offer4 img {
+    width: 324px;
+    height: 302px;
+  }
+
+  .vacancy_offers div h4 {
+    font-size: 40px;
+    padding-top: 14px;
+  }
+
+  .vacancy_offers div p {
+    font-size: 30px;
+  }
+
+  .vacancy_offers div span {
+    font-size: 30px;
+  }
+
+  .button {
+    font-size: 25px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .button a {
+    width: 294px;
+    height: 77px;
+  }
+}
+
+@media (max-width: 440px) {
+  .second_header, .about, .how_heading, how_content, vacancy_heading, .vacancy_content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .second_header {
+    padding-top: 20px;
+  }
+
+  .second_header ul {
+    font-size: 20px;
+  }
+
+  .second_header img {
+    width: 257px;
+    height: 346px;
+  }
+
+  .second_header span {
+    font-size: 35px;
+  }
+
+  .structure_help2 {
+    height: 458px;
+  }
+
+  .background4 {
+    display: none;
+  }
+
+  .background5 {
+    display: block;
+    width: 100%
+  }
+
+  .about {
+    height: 1364px;
+  }
+
+  .how_content {
+    padding-top: 50px;
+  }
+
+  .how_content {
+    grid-template-rows: 158px 208px 163px 188px 223px 246px;
+  }
+
+  .how_content div h4 {
+    font-size: 30px;
+  }
+
+  .how_content div p {
+    font-size: 25px;
+  }
+
+  .how_content div span {
+    font-size: 25px;
+  }
+
+  .vacancy_offers {
+    grid-template-rows: 730px 635px 519px 549px;
+  }
+
+  .vacancy_offers div h4 {
+    padding-top: 14px;
+  }
+
+  .vacancy_offers div p, .vacancy_offers div span{
+    padding-top: 9px
+  }
+
+  .offer1 img {
+    width: 236px;
+    height: 339px;
+  }
+
+  .offer2 img {
+    width: 236px;
+    height: 338px;
+  }
+
+  .offer3 img {
+    width: 236px;
+    height: 208px;
+  }
+
+  .offer4 img {
+    width: 236px;
+    height: 220px;
+  }
+
+  .vacancy_offers div h4 {
+    font-size: 30px;
+  }
+
+  .vacancy_offers div p {
+    font-size: 20px;
+  }
+
+  .vacancy_offers div span {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1980px) {
+  .structure_help2 ul {
+    font-size: 40px;
   }
 }
